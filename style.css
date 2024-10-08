@@ -67,7 +67,7 @@ html{
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
-    /* display: none; */
+    display: none;
 }
 
 /* SECCIÓN INICIO */
@@ -774,4 +774,33 @@ footer .arriba{
 }
 
 /* SECCIÓN RESPONSIVE */
-/* @media screen and (max-width) */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+        padding: 0; /* Elimina el padding del ul */
+        margin: 0; /* Asegura que no haya márgenes en ul */
+        list-style: none;
+        /* height: 240px; */
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 15px 0px; /* Ajusta el relleno para más espacio */
+        margin: 0; /* Elimina márgenes innecesarios */
+        text-align: left; 
+        /*box-sizing: border-box;  Asegura que el padding y border se incluyan en el ancho */
+    }
+}
