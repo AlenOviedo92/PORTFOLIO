@@ -646,6 +646,9 @@ html{
     background-color: #1e2326;
     color: #fff;
     padding: 50px 0;
+    background-size: contain; /* Ajusta la imagen para que se vea completa */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en el fondo */
 }
 .contacto .contenido-seccion{
     max-width: 1100px;
@@ -702,7 +705,10 @@ html{
     width: 100%;
 }
 .contacto .col img{
-    width: 100%;
+    width: 650px;
+    height: 550px;
+    /* width: 350px;
+    height: 350px; */
 }
 .contacto .col .info{
     position: absolute;
@@ -712,7 +718,7 @@ html{
     /* max-width: 350px; */
     width: 350px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-33%, -50%);
 }
 .contacto .col .info ul{
     list-style: none;
@@ -766,3 +772,6 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+
+/* SECCIÓN RESPONSIVE */
+/* @media screen and (max-width) */
