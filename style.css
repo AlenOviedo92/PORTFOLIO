@@ -418,7 +418,6 @@ html{
 }
 .curriculum .fila{
     display: flex;
-    /* justify-content: space-between; */
 }
 .curriculum .fila .col{
     width: 49%;
@@ -534,7 +533,6 @@ html{
 }
 .portfolio .galeria .proyecto{
     position: relative;
-    /* max-width: 640px; */
     height: fit-content;
     margin: 8px;
     cursor: pointer;
@@ -636,18 +634,14 @@ html{
     width: 100%;
 }
 .contacto .col img{
-    /* width: 650px;
-    height: 550px; */
     width: 100%;
 }
 .contacto .col .info{
     position: absolute;
-    top: 40%;
+    top: 30%;
     background-color: #252A2E;
     padding: 20px;
-    max-width: 100%;
-    /* width: 350px; */
-    left: 50%;
+    left: 40%;
     transform: translate(-33%, -50%);
 }
 .contacto .col .info ul{
@@ -655,11 +649,14 @@ html{
 }
 .contacto .col .info ul li{
     margin-bottom: 20px;
+    white-space: nowrap; /* Evita que el texto salte de línea */
 }
 .contacto .col .info ul li i{
     color:#1CB698;
     display: inline-block;
     margin-right: 20px;
+    margin-right: 10px; /* Reduce el margen para evitar desbordes */
+    vertical-align: middle; /* Alinea el ícono con el texto */
 }
 
 /* FOOTER */
@@ -721,17 +718,16 @@ footer .arriba{
     }
     nav.responsive ul{
         display: block !important;
-        padding: 0; /* Elimina el padding del ul */
-        margin: 0; /* Asegura que no haya márgenes en ul */
+        padding: 0;
+        margin: 0; 
         list-style: none;
-        /* height: 240px; */
     }
     nav.responsive ul li{
         /* border-bottom: 1px solid #fff; */
         border-top: 1px solid #fff;
 
-        padding: 0px 0px; /* Ajusta el relleno para más espacio */
-        margin: 0px; /* Elimina márgenes innecesarios */
+        padding: 0px 0px;
+        margin: 0px; 
         text-align: left; 
 
         height: 60px; 
@@ -787,13 +783,4 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
-    /* .contacto .fila .col ul{
-        width: 100%;
-    } */
-    /* .contacto .fila .col img{
-        width: 100%;
-    } */
-    /* .contacto .fila .col .info{
-        width: 100%;
-    }  */
 }
