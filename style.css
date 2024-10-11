@@ -547,6 +547,9 @@ html{
     width: 350.65px; 
     height: 250px;
 }
+.portfolio .galeria .proyecto a{
+    color: #fff;
+}
 .portfolio .galeria .proyecto .overlay{
     position: absolute;
     top: 0;
@@ -640,13 +643,24 @@ html{
 .contacto .col img{
     width: 100%;
 }
-.contacto .col .info{
+/* .contacto .col .info{
     position: absolute;
     top: 30%;
     background-color: #252A2E;
     padding: 20px;
     left: 40%;
     transform: translate(-33%, -50%);
+} */
+.contacto .col .info {
+    position: relative; /* Cambia de absolute a relative */
+    background-color: transparent;
+    padding: 10px;
+    max-width: 90%; /* Asegúrate de que no supere el tamaño del contenedor */
+    margin: 20px auto; /* Centra el div */
+    transform: none; /* Elimina la transformación previa */
+    left: auto; /* Asegúrate de que la posición no dependa de coordenadas */
+    top: auto;
+    text-align: center;
 }
 .contacto .col .info ul{
     list-style: none;
@@ -786,5 +800,10 @@ footer .arriba{
     }
     .contacto .fila .col{
         width: 100%;
+    }
+    .contacto .col .info {
+        max-width: 100%; /* Asegúrate de que se ajuste al tamaño completo */
+        padding: 10px; /* Ajusta el padding para pantallas pequeñas */
+        margin: 10px auto; /* Centra la info en pantallas pequeñas */
     }
 }
