@@ -452,5 +452,51 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- script que maneja el formulario -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevenir que el formulario se envíe de manera tradicional
+    
+            // Obtener los datos del formulario
+            const formData = new FormData(this);
+    
+            // Enviar los datos a process_form.php usando fetch
+            fetch('process_form.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json()) // Convertir la respuesta a JSON
+            .then(data => {
+                if (data.status === 'success') {
+                    // Mostrar SweetAlert de éxito
+                    Swal.fire({
+                        icon: 'success',
+                        title: '¡Éxito!',
+                        text: data.message,
+                    });
+                    // Limpiar el formulario
+                    document.getElementById('contactForm').reset();
+                } else {
+                    // Mostrar SweetAlert de error
+                    Swal.fire({
+                        icon: 'error',
+                        title: '¡Error!',
+                        text: data.message,
+                    });
+                }
+            })
+            .catch(error => {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error inesperado',
+                    text: 'Hubo un problema al procesar la solicitud.',
+                });
+            });
+        });
+    </script>
 </body>
 </html>

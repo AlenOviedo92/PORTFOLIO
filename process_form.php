@@ -29,18 +29,12 @@
 //     echo "Método de solicitud no válido.";
 // }
 
-
 // Incluir los archivos de PHPMailer
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 // Si usas Composer, necesitarás el autoload
 require 'vendor/autoload.php';
-
-// Si instalaste PHPMailer manualmente, necesitarás incluir los archivos manualmente
-// require 'path/to/PHPMailer/src/PHPMailer.php';
-// require 'path/to/PHPMailer/src/Exception.php';
-// require 'path/to/PHPMailer/src/SMTP.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Obtener los datos del formulario
@@ -52,7 +46,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Validar los campos del formulario
     if (empty($nombre) || empty($telefono) || empty($email) || empty($tema) || empty($mensaje)) {
-        echo "Todos los campos son obligatorios.";
+        // Enviar respuesta en formato JSON para manejarla en el frontend
+        echo json_encode(["status" => "error", "message" => "Todos los campos son obligatorios."]);
         exit;
     }
 
@@ -80,12 +75,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Enviar el correo
         $mail->send();
-        echo "Mensaje enviado exitosamente.";
+        // Enviar respuesta en formato JSON de éxito
+        echo json_encode(["status" => "success", "message" => "Mensaje enviado exitosamente."]);
     } catch (Exception $e) {
-        echo "Error al enviar el mensaje: {$mail->ErrorInfo}";
+        // Enviar respuesta en formato JSON de error
+        echo json_encode(["status" => "error", "message" => "Error al enviar el mensaje: {$mail->ErrorInfo}"]);
     }
 } else {
-    echo "Método de solicitud no válido.";
+    // Enviar respuesta en formato JSON si el método no es POST
+    echo json_encode(["status" => "error", "message" => "Solicitud no válida."]);
 }
 
 ?>
