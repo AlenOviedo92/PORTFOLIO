@@ -402,15 +402,17 @@
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número Telefónico">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
+                    <form id="contactForm" action="process_form.php" method="POST">
+                        <input type="text" name="nombre" placeholder="Tú Nombre">
+                        <input type="text" name="telefono" placeholder="Número Telefónico">
+                        <input type="text" name="email" placeholder="Email">
+                        <input type="text" name="tema" placeholder="Tema">
+                        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button>
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
                 </div>
                 <!-- Mapa -->
                 <div class="col">
