@@ -24,18 +24,20 @@ function efectoSkills() {
     if(distanciaSkills >= 300) {
         let habilidades = document.getElementsByClassName("progreso");
         habilidades[0].classList.add("javascript");
-        habilidades[1].classList.add("react");
-        habilidades[2].classList.add("node");
-        habilidades[3].classList.add("express");
-        habilidades[4].classList.add("postgresql");
-        habilidades[5].classList.add("htmlcss");
-        habilidades[6].classList.add("ibm");
-        habilidades[7].classList.add("aprendizaje");
-        habilidades[8].classList.add("trabajo");
-        habilidades[9].classList.add("responsabilidad");
-        habilidades[10].classList.add("resolucion");
-        habilidades[11].classList.add("comunicacion");
-        habilidades[12].classList.add("constancia");
+        habilidades[1].classList.add("typescript");
+        habilidades[2].classList.add("react");
+        habilidades[3].classList.add("node");
+        habilidades[4].classList.add("express");
+        habilidades[5].classList.add("postgresql");
+        habilidades[6].classList.add("htmlcss");
+        habilidades[7].classList.add("ibm");
+        habilidades[8].classList.add("aprendizaje");
+        habilidades[9].classList.add("trabajo");
+        habilidades[10].classList.add("responsabilidad");
+        habilidades[11].classList.add("resolucion");
+        habilidades[12].classList.add("comunicacion");
+        habilidades[13].classList.add("constancia");
+        habilidades[14].classList.add("flexibilidad");
     }
 }
 

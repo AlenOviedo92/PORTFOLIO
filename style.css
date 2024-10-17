@@ -301,6 +301,15 @@ html{
     100%{ width: 80%; }
 }
 
+.skills .skill .typescript{
+    width: 0%;
+    animation: 2s typescript forwards;
+}
+@keyframes typescript{
+    0%{ width: 0%; }
+    100%{ width: 69%; }
+}
+
 .skills .skill .react{
     width: 0%;
     animation: 2s react forwards;
@@ -409,6 +418,15 @@ html{
     100%{ width: 77%; }
 }
 
+.skills .skill .flexibilidad{
+    width: 0%;
+    animation: 2s flexibilidad forwards;
+}
+@keyframes flexibilidad{
+    0%{ width: 0%; }
+    100%{ width: 92%; }
+}
+
 /* SECCIÓN CURRICULUM */
 .curriculum{
     background-color: #1e2326;
@@ -418,6 +436,25 @@ html{
 .curriculum .contenido-seccion{
     max-width: 1100px;
     margin: auto;
+}
+.curriculum .contenido-seccion .redes {
+    text-align: center;
+}
+.curriculum .contenido-seccion .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px, solid, #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 20px;
+    transition: .3s;
+    text-align: center;
+}
+.curriculum .contenido-seccion .redes a:hover{
+    background-color: var(--primary-color);
 }
 .curriculum h2{
     font-size: 48px;
