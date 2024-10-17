@@ -33,20 +33,20 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// Si usas Composer, necesitarás el autoload
+// Necesito el autoload ya que usé Composer para la instalación
 require 'vendor/autoload.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Obtener los datos del formulario
+    // Obtengo los datos del formulario
     $nombre = htmlspecialchars($_POST['nombre']);
     $telefono = htmlspecialchars($_POST['telefono']);
     $email = htmlspecialchars($_POST['email']);
     $tema = htmlspecialchars($_POST['tema']);
     $mensaje = htmlspecialchars($_POST['mensaje']);
 
-    // Validar los campos del formulario
+    // Valido los campos del formulario
     if (empty($nombre) || empty($telefono) || empty($email) || empty($tema) || empty($mensaje)) {
-        // Enviar respuesta en formato JSON para manejarla en el frontend
+        // Envío respuesta en formato JSON para manejarla en el frontend
         echo json_encode(["status" => "error", "message" => "Todos los campos son obligatorios."]);
         exit;
     }

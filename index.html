@@ -478,12 +478,25 @@
     <!-- script que maneja el formulario -->
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevenir que el formulario se envíe de manera tradicional
+            event.preventDefault(); // Previene que el formulario se envíe de manera tradicional
+
+            // Obtengo el campo de teléfono
+            const telefono = document.querySelector('input[name="telefono"]').value;
+
+            // Verifico que solo contenga números
+            if (!/^\d+$/.test(telefono)) {
+                Swal.fire({
+                    icon: 'error',
+                    title: '¡Error!',
+                    text: 'El campo "Número Telefónico" solo debe contener números.',
+                });
+            return; // No enviar el formulario si la validación falla
+            }
     
-            // Obtener los datos del formulario
+            // Obtengo los datos del formulario
             const formData = new FormData(this);
     
-            // Enviar los datos a process_form.php usando fetch
+            // Envío los datos a process_form.php usando fetch
             fetch('process_form.php', {
                 method: 'POST',
                 body: formData
@@ -491,16 +504,16 @@
             .then(response => response.json()) // Convertir la respuesta a JSON
             .then(data => {
                 if (data.status === 'success') {
-                    // Mostrar SweetAlert de éxito
+                    // Muestro SweetAlert de éxito
                     Swal.fire({
                         icon: 'success',
                         title: '¡Éxito!',
                         text: data.message,
                     });
-                    // Limpiar el formulario
+                    // Limpio el formulario
                     document.getElementById('contactForm').reset();
                 } else {
-                    // Mostrar SweetAlert de error
+                    // Muestro SweetAlert de error
                     Swal.fire({
                         icon: 'error',
                         title: '¡Error!',
