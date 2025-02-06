@@ -158,8 +158,8 @@ html{
 }
 .sobremi .fila .col ul{
     list-style: none;
-    padding-left: 0;                                        /* Elimina el padding predeterminado en la izquierda */
-    margin-left: 0;                                         /* Elimina el margen predeterminado en la izquierda */
+    padding-left: 0;                                       
+    margin-left: 0;                                        
 }
 .sobremi .fila .col ul li{
     margin: 12px 0;
@@ -319,6 +319,15 @@ html{
     100%{ width: 80%; }
 }
 
+.skills .skill .angular{
+    width: 0%;
+    animation: 2s angular forwards;
+}
+@keyframes angular{
+    0%{ width: 0%; }
+    100%{ width: 65%; }
+}
+
 .skills .skill .node{
     width: 0%;
     animation: 2s node forwards;
@@ -353,15 +362,6 @@ html{
 @keyframes htmlcss{
     0%{ width: 0%; }
     100%{ width: 65%; }
-}
-
-.skills .skill .ibm{
-    width: 0%;
-    animation: 2s ibm forwards;
-}
-@keyframes ibm{
-    0%{ width: 0%; }
-    100%{ width: 60%; }
 }
 
 .skills .skill .aprendizaje{
