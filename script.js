@@ -26,11 +26,11 @@ function efectoSkills() {
         habilidades[0].classList.add("javascript");
         habilidades[1].classList.add("typescript");
         habilidades[2].classList.add("react");
-        habilidades[3].classList.add("node");
-        habilidades[4].classList.add("express");
-        habilidades[5].classList.add("postgresql");
-        habilidades[6].classList.add("htmlcss");
-        habilidades[7].classList.add("ibm");
+        habilidades[3].classList.add("angular");
+        habilidades[4].classList.add("node");
+        habilidades[5].classList.add("express");
+        habilidades[6].classList.add("postgresql");
+        habilidades[7].classList.add("htmlcss");
         habilidades[8].classList.add("aprendizaje");
         habilidades[9].classList.add("trabajo");
         habilidades[10].classList.add("responsabilidad");
