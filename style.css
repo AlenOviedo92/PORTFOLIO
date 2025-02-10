@@ -307,7 +307,7 @@ html{
 }
 @keyframes typescript{
     0%{ width: 0%; }
-    100%{ width: 69%; }
+    100%{ width: 70%; }
 }
 
 .skills .skill .react{
@@ -361,7 +361,7 @@ html{
 }
 @keyframes htmlcss{
     0%{ width: 0%; }
-    100%{ width: 65%; }
+    100%{ width: 70%; }
 }
 
 .skills .skill .aprendizaje{
@@ -415,7 +415,7 @@ html{
 }
 @keyframes constancia{
     0%{ width: 0%; }
-    100%{ width: 77%; }
+    100%{ width: 80%; }
 }
 
 .skills .skill .flexibilidad{
@@ -624,9 +624,9 @@ html{
     background-color: #1e2326;
     color: #fff;
     padding: 50px 0;
-    background-size: contain; /* Ajusta la imagen para que se vea completa */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center; /* Centra la imagen en el fondo */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .contacto .contenido-seccion{
     max-width: 1100px;
@@ -775,7 +775,6 @@ footer .arriba{
         list-style: none;
     }
     nav.responsive ul li{
-        /* border-bottom: 1px solid #fff; */
         border-top: 1px solid #fff;
 
         padding: 0px 0px;
@@ -836,8 +835,8 @@ footer .arriba{
         width: 100%;
     }
     .contacto .col .info {
-        max-width: 100%; /* Asegúrate de que se ajuste al tamaño completo */
-        padding: 10px; /* Ajusta el padding para pantallas pequeñas */
-        margin: 10px auto; /* Centra la info en pantallas pequeñas */
+        max-width: 100%; 
+        padding: 10px;
+        margin: 10px auto;
     }
 }
