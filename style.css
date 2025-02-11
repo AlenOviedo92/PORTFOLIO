@@ -29,7 +29,6 @@ html{
 .contenedor-header header{
     max-width: 1100px;
     margin: auto;
-    /* margin-top: 10px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,7 +56,7 @@ html{
     color: var(--primary-color);
 }
 .contenedor-header header nav ul li{
-    margin-bottom: -18px;                                       /* Baja un poco los elementos del menú */
+    margin-bottom: -18px;                                      
 }
 .nav-responsive{
     background-color: var(--primary-color);
@@ -73,7 +72,7 @@ html{
     background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
     url(images/fondo.jpg);
     background-size: cover;
-    background-position: center center;                         /* Ajusta la posición de la imagen */
+    background-position: center center;                        
     height: 100vh;
     color: #fff;
     display: flex;
@@ -567,7 +566,6 @@ html{
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-    /* background-color: red; */
 }
 .portfolio h2{
     font-size: 48px;
@@ -692,10 +690,10 @@ html{
     position: relative; 
     background-color: transparent;
     padding: 10px;
-    max-width: 90%; /* Asegúrate de que no supere el tamaño del contenedor */
-    margin: 20px auto; /* Centra el div */
-    transform: none; /* Elimina la transformación previa */
-    left: auto; /* Asegúrate de que la posición no dependa de coordenadas */
+    max-width: 90%;
+    margin: 20px auto;
+    transform: none;
+    left: auto;
     top: auto;
     text-align: center;
 }
@@ -704,14 +702,14 @@ html{
 }
 .contacto .col .info ul li{
     margin-bottom: 20px;
-    white-space: nowrap; /* Evita que el texto salte de línea */
+    white-space: nowrap;
 }
 .contacto .col .info ul li i{
     color: var(--primary-color);
     display: inline-block;
     margin-right: 20px;
     margin-right: 10px;
-    vertical-align: middle; /* Alinea el ícono con el texto */
+    vertical-align: middle;
 }
 
 /* FOOTER */
