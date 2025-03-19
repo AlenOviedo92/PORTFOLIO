@@ -324,7 +324,7 @@ html{
 }
 @keyframes angular{
     0%{ width: 0%; }
-    100%{ width: 65%; }
+    100%{ width: 70%; }
 }
 
 .skills .skill .node{
