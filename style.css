@@ -327,6 +327,15 @@ html{
     100%{ width: 70%; }
 }
 
+.skills .skill .next{
+    width: 0%;
+    animation: 2s next forwards;
+}
+@keyframes next{
+    0%{ width: 0%; }
+    100%{ width: 60%; }
+}
+
 .skills .skill .node{
     width: 0%;
     animation: 2s node forwards;

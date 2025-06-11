@@ -27,17 +27,18 @@ function efectoSkills() {
         habilidades[1].classList.add("typescript");
         habilidades[2].classList.add("react");
         habilidades[3].classList.add("angular");
-        habilidades[4].classList.add("node");
-        habilidades[5].classList.add("express");
-        habilidades[6].classList.add("postgresql");
-        habilidades[7].classList.add("htmlcss");
-        habilidades[8].classList.add("aprendizaje");
-        habilidades[9].classList.add("trabajo");
-        habilidades[10].classList.add("responsabilidad");
-        habilidades[11].classList.add("resolucion");
-        habilidades[12].classList.add("comunicacion");
-        habilidades[13].classList.add("constancia");
-        habilidades[14].classList.add("flexibilidad");
+        habilidades[4].classList.add("next");
+        habilidades[5].classList.add("node");
+        habilidades[6].classList.add("express");
+        habilidades[7].classList.add("postgresql");
+        habilidades[8].classList.add("htmlcss");
+        habilidades[9].classList.add("aprendizaje");
+        habilidades[10].classList.add("trabajo");
+        habilidades[11].classList.add("responsabilidad");
+        habilidades[12].classList.add("resolucion");
+        habilidades[13].classList.add("comunicacion");
+        habilidades[14].classList.add("constancia");
+        habilidades[15].classList.add("flexibilidad");
     }
 }
 
